@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="text-center">
-            <i class="fa-solid fa-circle mx-3" v-for="(elem, index) in obj" @click="selezioneImmagine(index)"></i>
+            <i class="fa-solid fa-circle mx-3" :class="(index == indice) ? 'text-danger' : '' " v-for="(elem, index) in obj" @click="selezioneImmagine(index)"></i>
         </div>
     </div>
 
