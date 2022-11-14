@@ -11,6 +11,9 @@ var app = new Vue({
         ],
         indice: 0,
     },
+    mounted() {
+        this.Intervallo();
+    },
     methods: {
         Indietro: function () {
             this.indice--;
@@ -18,12 +21,17 @@ var app = new Vue({
                 return this.indice = 5;
             }
         },
-
         Avanti: function () {
             this.indice++;
             if (this.indice > 5) {
                 return this.indice = 0;
             }
+        },
+        Intervallo: function () {
+            setInterval(() => { this.Avanti() }, 3000);
+        },
+        selezioneImmagine(index){
+            this.indice = index;
         },
     }
 })
