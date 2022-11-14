@@ -16,13 +16,13 @@
 <body>
     <div class="d-flex justify-content-center align-items-center" id="root">
         <div class="me-4">
-            <i class="fa-solid fa-arrow-left" @click="Indietro"></i>
+            <i class="fa-solid fa-arrow-left fa-2x" @click="Indietro"></i>
         </div>
         <div class="mt-5 mb-5">
-            <img :src="obj[indice].image" alt="">
+            <img :src="obj[indice].image" :alt="obj[indice].id">
         </div>
         <div class="ms-4">
-            <i class="fa-solid fa-arrow-right" @click="Avanti"></i>
+            <i class="fa-solid fa-arrow-right fa-2x" @click="Avanti"></i>
         </div>
     </div>
 
