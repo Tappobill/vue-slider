@@ -1,9 +1,13 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.fa-solid{
+.fa-solid {
     cursor: pointer;
+}
+
+.fa-circle:hover {
+    color: red;
 }
